@@ -2,11 +2,16 @@
   "name": "Node.Queues",
   "version": "0.0.1",
   "description": "Manage queues on Postgres",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "unit": "echo \"Error: no unit tests specified\" && exit 1"
+  },
   "repository": "https://github.com/threeplay/Node.Queues",
   "author": "Eliran Ben Ezra",
   "license": "MIT",
   "devDependencies": {
+    "tslint": "^5.20.0",
     "typescript": "^3.6.3"
   }
 }
