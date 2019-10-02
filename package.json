@@ -6,12 +6,19 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "cover": "nyc mocha --opts ./mocha.opts",
-    "test": "mocha --opts ./mocha.opts"
+    "test": "mocha --opts ./mocha.opts",
+    "test-features": "cucumber-js -p default"
   },
   "nyc": {
-    "extensions": [ ".ts" ],
-    "exclude": [ "**/*.d.ts" ],
-    "reporter": [ "html" ],
+    "extensions": [
+      ".ts"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html"
+    ],
     "all": true
   },
   "repository": "https://github.com/threeplay/Node.Queues",
@@ -22,6 +29,9 @@
     "yarn": "^1.17.3"
   },
   "devDependencies": {
+    "@types/cucumber": "^4.0.7",
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "mocha": "^6.2.1",
@@ -31,7 +41,5 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "@types/chai": "^4.2.3",
-    "@types/mocha": "^5.2.7"
   }
 }
