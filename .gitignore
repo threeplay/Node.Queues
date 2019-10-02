@@ -1,6 +1,9 @@
 # Compiled files
 dist
 
+# Temp files
+*.log
+
 # Coverage reports
 coverage
 
