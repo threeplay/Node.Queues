@@ -5,8 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "cover": "",
-    "unit": "mocha -r ts-node/register src/**/*.spec.ts"
+    "cover": "nyc mocha --opts ./mocha.opts",
+    "unit": "mocha --opts ./mocha.opts"
+  },
+  "nyc": {
+    "extensions": [ ".ts" ],
+    "exclude": [ "**/*.d.ts" ],
+    "reporter": [ "html" ],
+    "all": true
   },
   "repository": "https://github.com/threeplay/Node.Queues",
   "author": "Eliran Ben Ezra",
