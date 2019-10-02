@@ -1,12 +1,12 @@
 {
-  "name": "Node.Queues",
+  "name": "node typescript project template",
   "version": "0.0.1",
-  "description": "Manage queues on Postgres",
+  "description": "Base node typescript template",
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc && node dist/index.js",
     "cover": "nyc mocha --opts ./mocha.opts",
-    "unit": "mocha --opts ./mocha.opts"
+    "test": "mocha --opts ./mocha.opts"
   },
   "nyc": {
     "extensions": [ ".ts" ],
