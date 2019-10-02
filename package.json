@@ -1,5 +1,5 @@
 {
-  "name": "node typescript project template",
+  "name": "node.typescript.template",
   "version": "0.0.1",
   "description": "Base node typescript template",
   "main": "dist/index.js",
