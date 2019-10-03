@@ -4,6 +4,13 @@
         "tslint:recommended"
     ],
     "jsRules": {},
-    "rules": {},
+    "rules": {
+        "semicolon": true,
+        "await-promise": true,
+        "quotemark": [true, "single"],
+        "indent": [true, "spaces", 4],
+        "ordered-imports": false,
+        "interface-name": false
+    },
     "rulesDirectory": []
 }
