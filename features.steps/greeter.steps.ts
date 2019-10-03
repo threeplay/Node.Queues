@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { Given, Then, When } from 'cucumber';
-import hello from '@app/index';
+import { hello } from '@app/index';
 
 Given('hello function', function() {
   this.fn = hello;
